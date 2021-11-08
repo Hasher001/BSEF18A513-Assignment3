@@ -2,8 +2,248 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".quiz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Quiz"
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="472dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Q1"
+                    android:layout_width="412dp"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="#2196F3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/statement1"
+                            android:layout_width="370dp"
+                            android:layout_height="103dp"
+                            android:text="Sound Produced from Base of Tongue which is near Uvula touching the mouth roof ?"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RadioButton
+                                android:id="@+id/radioButton4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ی "
+                                android:textAlignment="viewStart"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ق"
+                                android:textAlignment="viewStart"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ک"
+                                android:textAlignment="viewStart"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ض"
+                                android:textAlignment="viewStart"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Q2"
+                    android:layout_width="412dp"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="#9C27B0">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/statement2"
+                            android:layout_width="370dp"
+                            android:layout_height="103dp"
+                            android:text="Sound Produced from One side of the tongue touching the molar teeth ?"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="24sp" />
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RadioButton
+                                android:id="@+id/radioButton8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Zuaad"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Laam"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Meem"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Noon"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Q3"
+                    android:layout_width="412dp"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="#FFC107" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/statement3"
+                            android:layout_width="370dp"
+                            android:layout_height="103dp"
+                            android:text="Sound Produced from Rounded tip of the tongue touching the base of the frontal 6 teeth ?"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <RadioButton
+                                android:id="@+id/radioButton12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Laam"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Meem"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Noon"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Faay"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/submit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
