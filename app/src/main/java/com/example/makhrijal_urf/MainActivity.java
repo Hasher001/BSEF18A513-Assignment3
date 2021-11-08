@@ -32,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void quiz_button(View v) {
+        switch(v.getId()) {
+            case R.id.Quiz:
+                Intent intent =  new Intent(MainActivity.this, quiz.class);
+                startActivity(intent);
+                break;
+        }
+    }
 
 
 }
