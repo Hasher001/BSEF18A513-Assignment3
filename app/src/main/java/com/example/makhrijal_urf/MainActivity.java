@@ -23,6 +23,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void valid_button(View v) {
+        switch(v.getId()) {
+            case R.id.Validation:
+                Intent intent =  new Intent(MainActivity.this, validation.class);
+                startActivity(intent);
+                break;
+        }
+    }
+
 
 
 }
