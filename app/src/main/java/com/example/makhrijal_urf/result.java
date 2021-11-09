@@ -29,4 +29,21 @@ public class result extends AppCompatActivity {
         }
     }
 
-}
+    public void share_button(View v) {
+        TextView txt = (TextView) findViewById(R.id.score);
+        String message = txt.getText().toString();
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        String complete="Hey there!!! I have got "+message+" in quiz :)";
+        intent.putExtra(Intent.EXTRA_TEXT, complete);
+        startActivity(intent);
+
+
+
+    }
+
+
+
+    }
+
