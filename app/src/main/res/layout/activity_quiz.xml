@@ -5,6 +5,7 @@
     android:id="@+id/Constraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="submit_button"
     tools:context=".quiz">
 
     <LinearLayout
@@ -56,41 +57,42 @@
                             android:textStyle="bold" />
 
                         <RadioGroup
+                            android:id="@+id/RG1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
                             <RadioButton
-                                android:id="@+id/radioButton4"
+                                android:id="@+id/G1R1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="ی "
+                                android:text="أ ہ"
                                 android:textAlignment="viewStart"
                                 android:textColor="#FFFFFF"
                                 android:textSize="24sp"
                                 android:textStyle="bold" />
 
                             <RadioButton
-                                android:id="@+id/radioButton5"
+                                android:id="@+id/G1R2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="ق"
+                                android:text="ع ح"
                                 android:textAlignment="viewStart"
                                 android:textColor="#FFFFFF"
                                 android:textSize="24sp"
                                 android:textStyle="bold" />
 
                             <RadioButton
-                                android:id="@+id/radioButton6"
+                                android:id="@+id/G1R3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="ک"
+                                android:text="غ خ"
                                 android:textAlignment="viewStart"
                                 android:textColor="#FFFFFF"
                                 android:textSize="24sp"
                                 android:textStyle="bold" />
 
                             <RadioButton
-                                android:id="@+id/radioButton7"
+                                android:id="@+id/G1R4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="ض"
@@ -239,6 +241,7 @@
             android:id="@+id/submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="submit_button"
             android:text="Submit" />
 
         <Button

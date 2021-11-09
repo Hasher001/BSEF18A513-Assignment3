@@ -29,7 +29,7 @@ public class quiz extends AppCompatActivity {
         //Generating random numbers to shuffle questions each time
         View st1 = (TextView)findViewById(R.id.statement1);
         Random random = new Random();
-        int value1 = random.nextInt(2 + 0) + 0;
+        int value1 = random.nextInt(3 + 0) + 0;
 
         //setting text value to randomly generated question
         ((TextView) st1).setText(Arr1[value1]);
@@ -51,5 +51,13 @@ public class quiz extends AppCompatActivity {
         }
     }
 
+    public void submit_button(View v) {
+        switch(v.getId()) {
+            case R.id.submit:
+                Intent intent =  new Intent(quiz.this, result.class);
+                startActivity(intent);
+                break;
+        }
+    }
 
 }
