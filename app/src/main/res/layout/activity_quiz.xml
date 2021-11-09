@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/back"
+    android:id="@+id/Constraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".quiz">
@@ -29,6 +29,7 @@
             android:layout_height="472dp">
 
             <LinearLayout
+                android:id="@+id/Questions"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
@@ -121,7 +122,8 @@
                             android:text="Sound Produced from One side of the tongue touching the molar teeth ?"
                             android:textAlignment="center"
                             android:textColor="#FFFFFF"
-                            android:textSize="24sp" />
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
 
                         <RadioGroup
                             android:layout_width="match_parent"
@@ -170,7 +172,7 @@
                     android:id="@+id/Q3"
                     android:layout_width="412dp"
                     android:layout_height="match_parent"
-                    app:cardBackgroundColor="#FFC107" >
+                    app:cardBackgroundColor="#FFC107">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -189,7 +191,7 @@
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
+                            android:layout_height="match_parent">
 
                             <RadioButton
                                 android:id="@+id/radioButton12"
@@ -240,10 +242,12 @@
             android:text="Submit" />
 
         <Button
-            android:id="@+id/submit2"
+            android:id="@+id/Back"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="back_button"
             android:text="Back" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
