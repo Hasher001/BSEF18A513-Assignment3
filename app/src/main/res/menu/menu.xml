@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:onClick="learn_button"
+        android:title="Learn" />
+    <item
+        android:onClick="quiz_button"
+        android:title="Quiz" />
+    <item
+        android:onClick="valid_button"
+        android:title="Validation" />
+</menu>
