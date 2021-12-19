@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
 
-
+            // Quiz Button
             case R.id.Quizz:
                 Intent intent2 = new Intent(MainActivity.this, quiz.class);
                 startActivity(intent2);
